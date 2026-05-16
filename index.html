@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Bookstore | Where every reader finds their story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Lily</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search books...">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Where every reader finds their story.</h1>
+            <button class="btn-hero">Bestselling Title</button>
+        </div>
+    </header>
+
+    <section class="book-section">
+        <h2 class="section-title">New Releases</h2>
+        <p class="section-subtitle">Goodreads' Trending New Releases for May</p>
+        <div class="book-grid" data-aos="fade-up">
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+1" alt="Book"></div>
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+2" alt="Book"></div>
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+3" alt="Book"></div>
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+4" alt="Book"></div>
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+5" alt="Book"></div>
+            <div class="book-card"><img src="https://via.placeholder.com/150x220?text=Book+6" alt="Book"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>May We Help You?</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">My Order</a>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Stay Updated</h4>
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-logo">Lily</div>
+        </div>
+        <p class="copyright">© 2026 Lily Bookstore</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
