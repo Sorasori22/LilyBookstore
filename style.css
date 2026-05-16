@@ -1,0 +1,145 @@
+:root {
+    --cream: #e5dec8;
+    --dark-teal: #0a3d3d;
+    --hero-bg: #121212; /* Fallback for image */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--dark-teal);
+}
+
+/* Hero Styles */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.search-container input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    width: 300px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.hero-content {
+    margin: auto 5%;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background: white;
+    color: black;
+}
+
+/* Book Sections */
+.book-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-card img:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #3d2b1f;
+    color: #e5dec8;
+    padding: 60px 5% 20px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col a {
+    display: block;
+    color: #e5dec8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    background: #a68b8b;
+    border: none;
+    cursor: pointer;
+}
